@@ -1,5 +1,10 @@
 CC = g++
-CFLAGS = -Wall -Wextra -Werror -pedantic
+CFLAGS = -Wall -Wextra -Werror -pedantic -Weffc++
 
-lab1: lab1.cpp
-	$(cc) $(cflags) -o lab1 lab1.cpp
+all: clean hello
+
+hello: hello.cpp
+	$(CC) $(CFLAGS) -o hello hello.cpp
+
+clean:
+	rm -rf hello
