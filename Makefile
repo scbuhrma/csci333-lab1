@@ -1,7 +1,7 @@
 CC = g++
 CFLAGS = -Wall -Wextra -Werror -pedantic -Weffc++
 
-all: clean hello
+all: clean hello problem2
 
 hello: hello.cpp
 	$(CC) $(CFLAGS) -o hello hello.cpp
