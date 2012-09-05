@@ -1,15 +1,15 @@
 #include <iostream>
 using namespace std;
 
-long Fibonacci(long);
-long Fibonacci (long t){
-	long sum = 0;
-	long fibseq = 0;
-	long a = 0;
-	long b = 1;
+int Fibonacci(int);
+int Fibonacci (int t){
+	int sum = 0;
+	int fibseq = 1;
+	int a = 1;
+	int b = 1;
 	if ( t <= 1)
 		return 0;	
-	for (long i=0; i<=t; ++i){
+	while (fibseq<=4000000){
 	
 	fibseq = a+b;
 	a=b;
@@ -25,8 +25,8 @@ long Fibonacci (long t){
 
 int main(){
 
-	long fibsum;
-	fibsum = Fibonacci(11);
+	int fibsum;
+	fibsum = Fibonacci(1000);
 	cout<<fibsum<<endl;
 	return 0;
 
